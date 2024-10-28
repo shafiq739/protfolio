@@ -1,0 +1,171 @@
+/* Reset Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #333;
+  padding: 15px;
+  text-align: center;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+navbar ul li {
+  margin: 0 15px;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+  color: #4caf50;
+}
+
+/* Section Styles */
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* Logo Styles */
+.logo {
+  width: 300px; /* Adjust width as needed */
+  height: 300px; /* Make sure height is equal to width for a perfect circle */
+  border-radius: 50%; /* This makes the image circular */
+  object-fit: cover; /* Ensures the image covers the circular area */
+  margin-bottom: 20px;
+}
+
+#home {
+  background: url("background.jpg") no-repeat center center/cover;
+  color: #fff;
+}
+
+.section h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.section p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+button:hover {
+  background-color: #45a049;
+}
+
+/* Portfolio Section */
+.portfolio-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.portfolio-item {
+  width: 200px;
+  height: 150px;
+  background-color: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  transition: transform 0.3s;
+}
+
+.portfolio-item:hover {
+  transform: scale(1.1);
+}
+
+/* Services Section */
+.services-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.services-list li {
+  background: #eee;
+  padding: 15px 20px;
+  border-radius: 5px;
+}
+
+/* Contact Section */
+.contact-form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+contact-form button {
+  background-color: #4caf50;
+}
+
+/* RESPONSIVE DESING */
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navbar ul li {
+    margin: 10px 0;
+  }
+
+  .section h2 {
+    font-size: 2em;
+  }
+
+  .portfolio-gallery {
+    flex-direction: column;
+  }
+  .portfolio-item {
+    width: 100%;
+    max-width: 300px;
+  }
+  .services-list {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .contact-form {
+    width: 90%;
+  }
+}
